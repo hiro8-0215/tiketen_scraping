@@ -1,0 +1,30 @@
+﻿ticket_id,created_at_unix,event_id,perf_date,perf_time,venue,status,price,quantity,delivery_method,ticket_type,name_type,raw_description,first_observed_at,last_observed_at,sold_at,details_fetched,seller_name,seller_rating,order_num,year_month
+sold_1776245331451,1776245331451,joseph-amazing-technicolor-dreamcoat,2026-06-27,17:00,[愛知県] COMTEC PORTBASE,sold,14800,1,当日手渡し,paper,female,,2026-04-15 09:28:51,2026-06-20 04:50:53,2026-06-20 04:50:53,False,,,,2026-04
+sold_1776605973414,1776605973414,joseph-amazing-technicolor-dreamcoat,2026-06-28,13:00,[愛知県] COMTEC PORTBASE,sold,14800,1,前日手渡し,paper,female,,2026-04-19 13:39:33,2026-06-20 04:50:53,2026-06-20 04:50:53,False,,,,2026-04
+atb2fishs8,1777444950406,joseph-amazing-technicolor-dreamcoat,2026-07-19,17:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:42:30,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+sold_1776551976694,1776551976694,joseph-amazing-technicolor-dreamcoat,2026-07-25,17:45,[東京都] 有楽町よみうりホール,sold,13000,1,公演日7日前までに郵送,paper,female,"JUMP FC先行 座席未定/重複なし/すり替えなし/有効期限内
+公演中止以外のキャンセル、返金対応はいたしかねますのでご了承ください。",2026-04-18 22:39:36,2026-06-20 04:50:53,2026-06-20 04:50:53,False,,,,2026-04
+8bzy6ysmcg,1777445062847,joseph-amazing-technicolor-dreamcoat,2026-07-25,17:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"手渡しご希望の場合はご相談ください。
+ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:44:22,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+ukwa7peba1,1777445137257,joseph-amazing-technicolor-dreamcoat,2026-08-01,13:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:45:37,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+foh0ykwry4,1777445198861,joseph-amazing-technicolor-dreamcoat,2026-08-01,17:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:46:38,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+48l8xx2aw4,1777445255456,joseph-amazing-technicolor-dreamcoat,2026-08-02,13:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:47:35,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+lnbnenuv16,1777445335932,joseph-amazing-technicolor-dreamcoat,2026-08-08,13:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:48:55,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+rnkzorea0s,1777445407587,joseph-amazing-technicolor-dreamcoat,2026-08-08,17:45,[東京都] 有楽町よみうりホール,listing,15700,1,2-3日以内に郵送,paper,female,"ぴあ先行抽選、重複当選のため
+定価＋手数料で設定しております。
+公演中止時のみ手数料・送料を差し引いて返金いたします。",2026-04-29 06:50:07,2026-06-20 04:50:53,,True,みみ,5.0,,2026-04
+2bv1411t3n,1777393614642,joseph-amazing-technicolor-dreamcoat,2026-08-09,13:45,[東京都] 有楽町よみうりホール,listing,0,1,当日手渡し,paper,female,"2名義中2番手単番
+初期当選
+該当名義",2026-04-28 16:26:54,2026-06-20 04:50:53,,True,R,5.0,番手,2026-04
