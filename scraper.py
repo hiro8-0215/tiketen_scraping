@@ -82,6 +82,7 @@ def parse_ticket_details(page, share_code):
         'seller_name': '',
         'seller_rating': '',
         'order_num': '',
+        'ticket_tags': '',
         'raw_description': ''
     }
     
@@ -96,10 +97,10 @@ def parse_ticket_details(page, share_code):
                 return text.replace(label, '').strip()
         return ''
             
-    # ---- 関連タグ（番手・ランダムなどの文化的情報）----
+    # ---- 関連タグ（同行・QRなどの抽出）----
     tags_str = find_next_text('関連タグ')
     if tags_str:
-        data['order_num'] = tags_str
+        data['ticket_tags'] = tags_str
 
     # ---- 詳細・備考: ページ全体テキストから正確に切り出す ----
     # 旧方式(text_blocks)は出品者情報が混入するバグがあったため、全文splitで境界検出する方式に変更
@@ -125,12 +126,12 @@ def parse_ticket_details(page, share_code):
                 unique_desc.append(line)
         data['raw_description'] = "\n".join(unique_desc).strip()
     
-    # 番手・ランダム情報が説明文中にあればorder_numに記録
-    if not data['order_num'] and data['raw_description']:
-        if '番手' in data['raw_description']:
-            data['order_num'] = '番手記載あり'
+    # 同行・同行が先にないかticket_tagsに記録
+    if not data['ticket_tags'] and data['raw_description']:
+        if '同行' in data['raw_description']:
+            data['ticket_tags'] = '同行記載あり'
         elif 'ランダム' in data['raw_description']:
-            data['order_num'] = 'ランダム記載あり'
+            data['ticket_tags'] = 'ランダム記載あり'
     
     # ---- 出品者情報: 全文splitから正確に切り出す ----
     # 「出品者」〜「購入リクエスト」間を抽出して名前・評価を分離
@@ -196,7 +197,7 @@ def save_master(performer, master):
     master_file = os.path.join(DATA_DIR, f'{performer}_master.csv')
     fieldnames = ['ticket_id', 'created_at_unix', 'event_id', 'perf_date', 'perf_time', 'venue', 
                   'ticket_type', 'name_type', 'delivery_method', 'seller_name', 
-                  'seller_rating', 'order_num', 'first_observed_at', 'last_observed_at', 
+                  'seller_rating', 'order_num', 'ticket_tags', 'first_observed_at', 'last_observed_at', 
                   'sold_at', 'status', 'quantity', 'price', 'raw_description', 'details_fetched']
                   
     with open(master_file, 'w', encoding='utf-8-sig', newline='') as f:
@@ -375,6 +376,7 @@ def main():
                     row['seller_name'] = details.get('seller_name', '')
                     row['seller_rating'] = details.get('seller_rating', '')
                     row['order_num'] = details.get('order_num', '')
+                    row['ticket_tags'] = details.get('ticket_tags', '')
                     row['details_fetched'] = 'True'
                     
                     # インクリメンタル保存: 50件ごと + 最後の1件はかならず保存
