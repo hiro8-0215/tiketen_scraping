@@ -264,7 +264,7 @@ def main():
         master = load_master(performer)
         
         by_share_code = {t['ticket_id']: t for t in master.values() if not t['ticket_id'].startswith('sold_')}
-        by_created_at = {t['created_at_unix']: t for t in master.values() if t.get('created_at_unix')}
+        by_created_at = {f"{t['created_at_unix']}_{t.get('price', '')}": t for t in master.values() if t.get('created_at_unix')}
         
         current_active_codes = set()
         new_active_tickets = []
@@ -282,6 +282,8 @@ def main():
             for t in tickets:
                 status = t.get('status')
                 created_at_unix = str(t.get('createdAt', ''))
+                price_val = str(t.get('pricePerTicket', ''))
+                match_key = f"{created_at_unix}_{price_val}"
                 
                 if status == 'active':
                     share_code = t.get('shareCode')
@@ -294,7 +296,7 @@ def main():
                         row['last_observed_at'] = now_str
                         if str(row.get('details_fetched', 'False')) != 'True':
                             new_active_tickets.append(share_code)
-                        by_created_at[created_at_unix] = row
+                        by_created_at[match_key] = row
                     else:
                         row = {
                             'ticket_id': share_code,
@@ -319,13 +321,13 @@ def main():
                         except: pass
                             
                         by_share_code[share_code] = row
-                        by_created_at[created_at_unix] = row
+                        by_created_at[match_key] = row
                         master[share_code] = row
                         new_active_tickets.append(share_code)
                         
                 elif status == 'sold':
-                    if created_at_unix in by_created_at:
-                        row = by_created_at[created_at_unix]
+                    if match_key in by_created_at:
+                        row = by_created_at[match_key]
                         if row['status'] == 'listing':
                             row['status'] = 'sold'
                             row['sold_at'] = now_str
@@ -354,7 +356,7 @@ def main():
                         try:
                             row['first_observed_at'] = datetime.fromtimestamp(int(created_at_unix)/1000.0).strftime('%Y-%m-%d %H:%M:%S')
                         except: pass
-                        by_created_at[created_at_unix] = row
+                        by_created_at[match_key] = row
                         master[t_id] = row
 
         if new_active_tickets:
