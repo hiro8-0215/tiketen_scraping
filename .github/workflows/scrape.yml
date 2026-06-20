@@ -2,8 +2,8 @@ name: Ticket Scraper
 
 on:
   schedule:
-    # 3時間おきに実行 (UTC時間での指定。日本時間の 0時, 3時, 6時... に相当します)
-    - cron: '0 */3 * * *'
+    # 3時間おきの14分に実行 (GitHub Actionsの混雑によるスキップを回避するため時間をずらしています)
+    - cron: '14 */3 * * *'
   workflow_dispatch: # GitHubの画面から手動でボタンを押して実行できるようにする設定
 
 permissions:
