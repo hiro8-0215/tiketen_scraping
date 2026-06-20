@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# デバッグ・テスト用ファイル（リポジトリには含めない）
+debug_*.py
+measure_run.py
+verify.py
+data/*.txt
+data/*.html
+data/targets_test.json
+
+# Playwright
+playwright-report/
+
+# OS
+.DS_Store
+Thumbs.db
