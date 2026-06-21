@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-03,akechico,2026-06-29,18:00,[東京都] EX THEATER ARIAKE (東京ドリームパーク内),2,1,0,1,7000.0,7000,7000
+2026-03,akechico,2026-06-29,18:00,[東京都] EX THEATER ARIAKE (東京ドリームパーク内),2,0,0,2,7000.0,7000,7000
 2026-03,akechico,2026-07-12,12:30,[東京都] EX THEATER ARIAKE (東京ドリームパーク内),4,2,0,2,20000.0,0,40000
 2026-03,akechico,2026-08-06,18:00,[福岡県] キャナルシティ劇場,2,1,0,1,25000.0,25000,25000
 2026-03,akechico,2026-08-08,12:30,[福岡県] キャナルシティ劇場,4,2,0,2,35000.0,30000,40000
