@@ -1,7 +1,7 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
 2026-05,wendy-and-peter-pan,2026-06-21,13:00,[東京都] THEATER MILANO-Za,4,0,3,1,27000.0,18000,40000
 2026-05,wendy-and-peter-pan,2026-06-22,13:00,[東京都] THEATER MILANO-Za,3,0,3,0,21333.333333333332,0,39000
-2026-05,wendy-and-peter-pan,2026-06-25,13:00,[東京都] THEATER MILANO-Za,1,1,0,0,28000.0,28000,28000
+2026-05,wendy-and-peter-pan,2026-06-25,13:00,[東京都] THEATER MILANO-Za,2,0,1,1,24500.0,21000,28000
 2026-05,wendy-and-peter-pan,2026-06-25,18:00,[東京都] THEATER MILANO-Za,7,3,4,0,32142.85714285714,21000,50000
 2026-05,wendy-and-peter-pan,2026-06-26,13:00,[東京都] THEATER MILANO-Za,11,3,8,0,27136.363636363636,14500,40000
 2026-05,wendy-and-peter-pan,2026-06-27,13:00,[東京都] THEATER MILANO-Za,4,1,2,1,34245.0,26000,45000
