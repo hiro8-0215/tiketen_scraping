@@ -165,6 +165,8 @@ def parse_ticket_details(page, share_code):
                 name_part = first_line[:rating_in_first.start()].strip()
                 data['seller_name'] = name_part if name_part else first_line
                 data['seller_rating'] = rating_in_first.group(1)
+                order_m = _re.search(r'\d+\.\d+[\s（\(]*([\d,]+)件', first_line)
+                if order_m: data['order_num'] = order_m.group(1).replace(',', '')
             else:
                 data['seller_name'] = first_line
                 # 2行目以降から評価（X.X形式）を探す
@@ -174,6 +176,8 @@ def parse_ticket_details(page, share_code):
                     m = _re.search(r'(\d+\.\d+)', line)
                     if m:
                         data['seller_rating'] = m.group(1)
+                        order_m = _re.search(r'\d+\.\d+[\s（\(]*([\d,]+)件', line)
+                        if order_m: data['order_num'] = order_m.group(1).replace(',', '')
                         break
             
     return data
