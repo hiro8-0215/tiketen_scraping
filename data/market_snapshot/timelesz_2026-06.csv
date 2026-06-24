@@ -1,7 +1,7 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
 2026-06,timelesz-live-tour-2026-momentum,2026-06-30,18:00,横浜アリーナ,69,40,15,14,47235.50724637681,0,85000
 2026-06,timelesz-live-tour-2026-momentum,2026-07-01,12:30,横浜アリーナ,41,23,10,8,45941.46341463415,0,100000
-2026-06,timelesz-live-tour-2026-momentum,2026-07-01,17:30,横浜アリーナ,60,43,11,6,42715.21666666667,0,100000
+2026-06,timelesz-live-tour-2026-momentum,2026-07-01,17:30,横浜アリーナ,61,43,12,6,42424.80327868852,0,100000
 2026-06,timelesz-live-tour-2026-momentum,2026-07-02,12:30,横浜アリーナ,38,30,3,5,50815.78947368421,5500,80000
 2026-06,timelesz-live-tour-2026-momentum,2026-07-02,17:30,横浜アリーナ,55,42,9,4,48034.545454545456,0,95000
 2026-06,timelesz-live-tour-2026-momentum,2026-07-25,17:00,真駒内セキスイハイムアイスアリーナ,15,8,4,3,32866.53333333333,0,65000
