@@ -1,11 +1,11 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-06,are-you-red-y,2026-06-27,17:00,京セラドーム大阪,145,76,30,39,8748.965517241379,200,36000
-2026-06,are-you-red-y,2026-06-28,15:00,京セラドーム大阪,127,66,30,31,11132.952755905511,500,52000
+2026-06,are-you-red-y,2026-06-27,17:00,京セラドーム大阪,145,75,30,40,8748.965517241379,200,36000
+2026-06,are-you-red-y,2026-06-28,15:00,京セラドーム大阪,127,64,31,32,11132.952755905511,500,52000
 2026-06,are-you-red-y,2026-07-25,18:00,東京ドーム,37,26,5,6,14662.486486486487,1000,45000
 2026-06,are-you-red-y,2026-07-26,18:00,東京ドーム,43,31,3,9,11862.511627906977,0,33000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-27,13:00,[愛知県] COMTEC PORTBASE,1,1,0,0,35000.0,35000,35000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-27,17:00,[愛知県] COMTEC PORTBASE,1,0,1,0,14000.0,14000,14000
-2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-28,13:00,[愛知県] COMTEC PORTBASE,1,1,0,0,12000.0,12000,12000
+2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-28,13:00,[愛知県] COMTEC PORTBASE,2,0,1,1,10000.0,8000,12000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-07-04,17:30,[岡山県] 岡山芸術創造劇場 ハレノワ 大劇場,1,0,0,1,14000.0,14000,14000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-07-05,14:00,[岡山県] 岡山芸術創造劇場 ハレノワ 大劇場,1,1,0,0,9000.0,9000,9000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-07-10,15:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,1,1,0,0,12000.0,12000,12000
