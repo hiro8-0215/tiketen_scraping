@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
 2026-02,west-live-tour-yuitsumuni,2026-06-26,18:00,[千葉県] ららアリーナ 東京ベイ,7,0,3,4,46857.142857142855,40000,48000
 2026-02,west-live-tour-yuitsumuni,2026-06-27,18:00,[千葉県] ららアリーナ 東京ベイ,12,0,5,7,45450.0,13500,60000
-2026-02,west-live-tour-yuitsumuni,2026-06-28,12:00,[千葉県] ららアリーナ 東京ベイ,36,2,4,30,38305.555555555555,20000,58000
-2026-02,west-live-tour-yuitsumuni,2026-06-28,17:00,[千葉県] ららアリーナ 東京ベイ,59,4,11,44,55606.779661016946,10800,74000
+2026-02,west-live-tour-yuitsumuni,2026-06-28,12:00,[千葉県] ららアリーナ 東京ベイ,36,1,5,30,38305.555555555555,20000,58000
+2026-02,west-live-tour-yuitsumuni,2026-06-28,17:00,[千葉県] ららアリーナ 東京ベイ,60,3,12,45,56346.666666666664,10800,100000
