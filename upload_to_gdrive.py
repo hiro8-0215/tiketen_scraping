@@ -61,12 +61,13 @@ def main():
             'name': file_name,
             'parents': [subfolder_id]
         }
-        media = MediaFileUpload(file_path, mimetype='text/csv', resumable=True)
+        media = MediaFileUpload(file_path, mimetype='text/csv')
         try:
             file = service.files().create(body=file_metadata, media_body=media, fields='id').execute()
             print(f"  -> 完了")
         except Exception as e:
             print(f"  -> エラー発生: {file_name} のアップロードに失敗しました: {e}")
+            raise e
 
     print("すべてのアーカイブ処理が正常に完了しました！")
 
