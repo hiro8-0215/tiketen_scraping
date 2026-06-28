@@ -12,11 +12,8 @@ PARENT_FOLDER_ID = '1Xi4LQGY45c09OmmbhV8MlxzKDbWE8UYe'
 def main():
     print("Google Apps Script 経由でのバックアップ処理を開始します...")
 
-    # GitHub SecretsからURLを取得
-    webapp_url = os.environ.get('GAS_WEBAPP_URL')
-    if not webapp_url:
-        print("エラー: 環境変数 GAS_WEBAPP_URL が設定されていません。")
-        sys.exit(1)
+    # URLを直接指定
+    webapp_url = 'https://script.google.com/macros/s/AKfycbzQV0CeTbPRAv4zTA-SpLqQJdJ9WUPpmDeEAOBFJKoqj9m50rSCl-2LDEMZ0y9Appdc/exec'
 
     # 日本時間(JST)で今日の日付を取得
     JST = timezone(timedelta(hours=+9), 'JST')
