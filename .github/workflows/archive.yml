@@ -15,10 +15,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Google Drive用のライブラリをインストール
-        run: pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
-
       - name: Google Driveへバックアップ実行
         env:
-          GDRIVE_CREDENTIALS_JSON: ${{ secrets.GDRIVE_CREDENTIALS_JSON }}
+          GAS_WEBAPP_URL: ${{ secrets.GAS_WEBAPP_URL }}
         run: python upload_to_gdrive.py
