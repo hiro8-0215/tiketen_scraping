@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-06,acees-arena-tour-v,2026-07-10,12:30,有明アリーナ,124,27,32,65,22103.00806451613,0,52000
+2026-06,acees-arena-tour-v,2026-07-10,12:30,有明アリーナ,124,26,33,65,22103.00806451613,0,52000
 2026-06,acees-arena-tour-v,2026-07-10,17:30,有明アリーナ,104,22,32,50,22741.346153846152,0,45000
 2026-06,acees-arena-tour-v,2026-07-11,12:30,有明アリーナ,100,14,29,57,23455.84,0,50000
 2026-06,acees-arena-tour-v,2026-07-11,17:30,有明アリーナ,135,25,51,59,22937.25925925926,0,60000
