@@ -1,8 +1,8 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
 2026-06,are-you-red-y,2026-06-27,17:00,京セラドーム大阪,289,0,99,190,10085.148788927336,0,50000
 2026-06,are-you-red-y,2026-06-28,15:00,京セラドーム大阪,288,0,137,151,15114.5,0,145200
-2026-06,are-you-red-y,2026-07-25,18:00,東京ドーム,59,23,15,21,13981.559322033898,0,45000
-2026-06,are-you-red-y,2026-07-26,18:00,東京ドーム,63,25,13,25,12379.174603174602,0,33000
+2026-06,are-you-red-y,2026-07-25,18:00,東京ドーム,60,24,15,21,14531.866666666667,0,47000
+2026-06,are-you-red-y,2026-07-26,18:00,東京ドーム,65,27,13,25,12421.353846153846,0,33000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-27,13:00,[愛知県] COMTEC PORTBASE,2,0,0,2,42500.0,35000,50000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-27,17:00,[愛知県] COMTEC PORTBASE,1,0,1,0,14000.0,14000,14000
 2026-06,joseph-amazing-technicolor-dreamcoat,2026-06-28,13:00,[愛知県] COMTEC PORTBASE,2,0,1,1,10000.0,8000,12000
