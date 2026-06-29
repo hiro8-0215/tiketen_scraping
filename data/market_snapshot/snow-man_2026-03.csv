@@ -1,7 +1,7 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
 2026-03,wendy-and-peter-pan,2026-06-26,13:00,[東京都] THEATER MILANO-Za,7,0,0,7,50000.0,45000,60000
 2026-03,wendy-and-peter-pan,2026-06-27,13:00,[東京都] THEATER MILANO-Za,1,0,1,0,30000.0,30000,30000
-2026-03,wendy-and-peter-pan,2026-07-13,15:00,[大阪府] フェニーチェ堺 大ホール,12,1,2,9,52666.666666666664,22000,60000
+2026-03,wendy-and-peter-pan,2026-07-13,15:00,[大阪府] フェニーチェ堺 大ホール,12,0,3,9,52666.666666666664,22000,60000
 2026-03,wendy-and-peter-pan,2026-07-14,13:00,[大阪府] フェニーチェ堺 大ホール,2,0,2,0,32500.0,0,65000
 2026-03,wendy-and-peter-pan,2026-07-15,13:00,[大阪府] フェニーチェ堺 大ホール,11,1,1,9,76818.18181818182,45000,80000
 2026-03,wendy-and-peter-pan,2026-07-15,18:00,[大阪府] フェニーチェ堺 大ホール,1,0,1,0,50000.0,50000,50000
