@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-07,wendy-and-peter-pan,2026-07-13,15:00,[大阪府] フェニーチェ堺 大ホール,4,4,0,0,23250.0,18000,32000
+2026-07,wendy-and-peter-pan,2026-07-13,15:00,[大阪府] フェニーチェ堺 大ホール,4,3,0,1,23250.0,18000,32000
 2026-07,wendy-and-peter-pan,2026-07-15,13:00,[大阪府] フェニーチェ堺 大ホール,1,1,0,0,60000.0,60000,60000
 2026-07,wendy-and-peter-pan,2026-07-15,18:00,[大阪府] フェニーチェ堺 大ホール,1,1,0,0,24000.0,24000,24000
 2026-07,wendy-and-peter-pan,2026-07-16,13:00,[大阪府] フェニーチェ堺 大ホール,2,2,0,0,22500.0,20000,25000
