@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-07,ae-group-live-tour-runway,2026-07-04,18:00,横浜アリーナ,17,13,1,3,38882.294117647056,0,58000
+2026-07,ae-group-live-tour-runway,2026-07-04,18:00,横浜アリーナ,18,13,1,4,38666.61111111111,0,58000
 2026-07,ae-group-live-tour-runway,2026-07-05,12:30,横浜アリーナ,10,8,1,1,37399.9,19999,60000
 2026-07,ae-group-live-tour-runway,2026-07-05,17:00,横浜アリーナ,15,14,0,1,40666.6,19999,70000
 2026-07,ae-group-live-tour-runway,2026-07-06,18:00,横浜アリーナ,10,9,0,1,35199.9,0,53000
