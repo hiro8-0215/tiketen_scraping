@@ -1,0 +1,2 @@
+﻿ticket_id,created_at_unix,event_id,perf_date,perf_time,venue,ticket_type,name_type,delivery_method,seller_name,seller_rating,order_num,ticket_tags,first_observed_at,last_observed_at,sold_at,status,quantity,price,raw_description,details_fetched,year_month
+kh1dxnrk4x,1782873731581,naniwa-danshi-nd5,2026-07-19,17:30,マリンメッセ福岡A館,electronic,female,公演2日前にログイン情報共有,ca,5.0,,QR,2026-07-01 02:42:11,2026-07-01 03:01:35,,listing,1,62048,,True,2026-07
