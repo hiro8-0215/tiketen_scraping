@@ -19,3 +19,12 @@ playwright-report/
 # OS
 .DS_Store
 Thumbs.db
+
+# --- Security ---
+# GCP Service Account Keys etc.
+*.json
+
+# --- Data Dirs ---
+# 日々の生データは重くなるため無視するが、フォルダ自体は維持する
+tiketen_date_data/*
+!tiketen_date_data/.gitkeep
