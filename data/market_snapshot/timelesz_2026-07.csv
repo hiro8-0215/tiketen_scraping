@@ -1,7 +1,7 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
 2026-07,kimi-to-hanabi-to-yakusoku-to-greeting,2026-07-17,15:40,新宿ピカデリー,3,2,0,1,18500.0,5000,40000
 2026-07,kimi-to-hanabi-to-yakusoku-to-greeting,2026-07-17,18:55,新宿ピカデリー,2,1,0,1,57500.0,20000,95000
-2026-07,nika-game,2026-08-07,15:00,EX THEATER ROPPONGI（東京都）,11,4,5,2,37045.454545454544,25000,45000
+2026-07,nika-game,2026-08-07,15:00,EX THEATER ROPPONGI（東京都）,11,3,5,3,37045.454545454544,25000,45000
 2026-07,nika-game,2026-08-07,19:00,EX THEATER ROPPONGI（東京都）,7,4,2,1,35928.57142857143,31500,40000
 2026-07,nika-game,2026-08-08,11:00,EX THEATER ROPPONGI（東京都）,8,3,2,3,36753.0,31024,50000
 2026-07,nika-game,2026-08-08,15:00,EX THEATER ROPPONGI（東京都）,16,7,4,5,34763.625,25853,45000
