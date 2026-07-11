@@ -1,22 +1,22 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-11,18:00,朱鷺メッセ 新潟コンベンションセンター,80,2,51,27,11569.4,100,30000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-11,18:00,朱鷺メッセ 新潟コンベンションセンター,80,0,51,29,11569.4,100,30000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-12,12:30,朱鷺メッセ 新潟コンベンションセンター,34,0,29,5,9819.64705882353,100,30000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-12,17:30,朱鷺メッセ 新潟コンベンションセンター,40,1,24,15,10589.775,100,32000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-31,18:00,GLION ARENA KOBE,25,18,4,3,19546.4,0,39500
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-01,12:30,GLION ARENA KOBE,22,4,12,6,15262.681818181818,9000,40000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-01,17:30,GLION ARENA KOBE,24,12,9,3,16154.125,3500,50000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-12,17:30,朱鷺メッセ 新潟コンベンションセンター,40,0,25,15,10589.775,100,32000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-07-31,18:00,GLION ARENA KOBE,25,17,4,4,19546.4,0,39500
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-01,12:30,GLION ARENA KOBE,22,3,13,6,15262.681818181818,9000,40000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-01,17:30,GLION ARENA KOBE,25,11,10,4,15947.96,3500,50000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-02,12:30,GLION ARENA KOBE,21,9,8,4,15419.047619047618,3500,40000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-02,17:30,GLION ARENA KOBE,16,6,8,2,15656.25,0,45000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-20,18:00,有明アリーナ,26,15,8,3,17195.576923076922,0,48000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-21,13:00,有明アリーナ,24,9,10,5,15378.208333333334,0,35000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-21,18:00,有明アリーナ,34,17,12,5,18508.382352941175,5000,72550
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-21,18:00,有明アリーナ,34,16,13,5,18508.382352941175,5000,72550
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-22,12:30,有明アリーナ,31,20,9,2,18138.516129032258,5170,38000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-22,17:30,有明アリーナ,40,17,20,3,18434.05,0,80000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-22,17:30,有明アリーナ,40,16,21,3,18434.05,0,80000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-23,12:30,有明アリーナ,37,13,21,3,17177.37837837838,0,35000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-23,17:30,有明アリーナ,50,28,19,3,22014.18,0,100000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-08-23,17:30,有明アリーナ,50,26,21,3,22014.18,0,100000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-03,18:00,マリンメッセ福岡 A館,33,19,10,4,20557.18181818182,0,50000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-04,12:30,マリンメッセ福岡 A館,17,9,6,2,14304.882352941177,0,35000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-04,17:30,マリンメッセ福岡 A館,14,7,6,1,10220.857142857143,5500,20000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-09,18:00,セキスイハイムスーパーアリーナ,11,5,6,0,12698.454545454546,6205,25000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-09,18:00,セキスイハイムスーパーアリーナ,11,4,7,0,12698.454545454546,6205,25000
 2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-10,12:30,セキスイハイムスーパーアリーナ,21,12,8,1,16147.285714285714,5000,40000
-2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-10,17:30,セキスイハイムスーパーアリーナ,45,26,19,0,20870.733333333334,3800,53000
+2026-05,key-to-lit-arena-tour-2026-neo-classics,2026-10-10,17:30,セキスイハイムスーパーアリーナ,47,23,21,3,21684.744680851065,3800,53000

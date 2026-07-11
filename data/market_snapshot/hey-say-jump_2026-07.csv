@@ -1,6 +1,6 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-07,are-you-red-y,2026-07-25,18:00,東京ドーム,66,51,6,9,18077.272727272728,0,50000
-2026-07,are-you-red-y,2026-07-26,18:00,東京ドーム,77,49,8,20,16048.051948051949,0,60000
+2026-07,are-you-red-y,2026-07-25,18:00,東京ドーム,66,50,6,10,18077.272727272728,0,50000
+2026-07,are-you-red-y,2026-07-26,18:00,東京ドーム,79,49,8,22,16129.113924050633,0,60000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-05,14:00,[岡山県] 岡山芸術創造劇場 ハレノワ 大劇場,1,0,0,1,45000.0,45000,45000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-10,15:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,1,0,0,1,25000.0,25000,25000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-11,13:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,2,0,0,2,16000.0,7000,25000
