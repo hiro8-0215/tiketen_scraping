@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-07,are-you-red-y,2026-07-25,18:00,東京ドーム,79,52,9,18,18125.316455696204,0,60000
+2026-07,are-you-red-y,2026-07-25,18:00,東京ドーム,80,53,9,18,18123.75,0,60000
 2026-07,are-you-red-y,2026-07-26,18:00,東京ドーム,96,54,16,26,16002.083333333334,0,60000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-05,14:00,[岡山県] 岡山芸術創造劇場 ハレノワ 大劇場,1,0,0,1,45000.0,45000,45000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-10,15:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,1,0,0,1,25000.0,25000,25000
@@ -8,11 +8,12 @@
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-12,13:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,2,0,1,1,10499.5,9999,11000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-13,13:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,2,0,0,2,13000.0,11000,15000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-19,13:45,[東京都] 有楽町よみうりホール,3,2,0,1,18666.666666666668,15000,25000
-2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-19,17:45,[東京都] 有楽町よみうりホール,3,2,0,1,17833.333333333332,15500,22000
+2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-19,17:45,[東京都] 有楽町よみうりホール,3,1,0,2,17833.333333333332,15500,22000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-23,13:45,[東京都] 有楽町よみうりホール,1,1,0,0,35000.0,35000,35000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-23,17:45,[東京都] 有楽町よみうりホール,3,3,0,0,22166.666666666668,15000,36000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-24,13:45,[東京都] 有楽町よみうりホール,2,1,0,1,15500.0,13000,18000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-26,13:45,[東京都] 有楽町よみうりホール,1,0,0,1,17000.0,17000,17000
+2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-27,13:45,[東京都] 有楽町よみうりホール,1,1,0,0,45000.0,45000,45000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-27,17:45,[東京都] 有楽町よみうりホール,1,1,0,0,16000.0,16000,16000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-31,13:45,[東京都] 有楽町よみうりホール,2,1,0,1,26000.0,20000,32000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-08-04,13:45,[東京都] 有楽町よみうりホール,1,0,0,1,28000.0,28000,28000
