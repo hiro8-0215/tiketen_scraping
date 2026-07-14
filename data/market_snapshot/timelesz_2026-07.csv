@@ -1,5 +1,5 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-07,kimi-to-hanabi-to-yakusoku-to-greeting,2026-07-17,15:40,新宿ピカデリー,17,3,1,13,8205.882352941177,0,40000
+2026-07,kimi-to-hanabi-to-yakusoku-to-greeting,2026-07-17,15:40,新宿ピカデリー,18,1,3,14,7933.333333333333,0,40000
 2026-07,kimi-to-hanabi-to-yakusoku-to-greeting,2026-07-17,18:55,新宿ピカデリー,16,0,4,12,12497.1875,3000,95000
 2026-07,nika-game,2026-08-07,15:00,EX THEATER ROPPONGI（東京都）,18,8,5,5,38200.61111111111,25000,50000
 2026-07,nika-game,2026-08-07,19:00,EX THEATER ROPPONGI（東京都）,17,9,2,6,40323.470588235294,25000,69999
@@ -15,7 +15,7 @@
 2026-07,timelesz-live-tour-2026-momentum,2026-07-26,17:30,真駒内セキスイハイムアイスアリーナ,29,9,7,13,40758.620689655174,0,70000
 2026-07,timelesz-live-tour-2026-momentum,2026-07-31,18:00,大阪城ホール,25,15,5,5,69080.0,0,280000
 2026-07,timelesz-live-tour-2026-momentum,2026-08-01,13:00,大阪城ホール,21,10,3,8,58380.95238095238,0,180000
-2026-07,timelesz-live-tour-2026-momentum,2026-08-01,17:30,大阪城ホール,25,15,4,6,67074.12,0,250000
+2026-07,timelesz-live-tour-2026-momentum,2026-08-01,17:30,大阪城ホール,26,14,5,7,66609.73076923077,0,250000
 2026-07,timelesz-live-tour-2026-momentum,2026-08-15,17:00,マリンメッセ福岡A館,10,5,1,4,54915.0,0,72000
 2026-07,timelesz-live-tour-2026-momentum,2026-08-16,13:00,マリンメッセ福岡A館,7,6,0,1,51857.142857142855,29500,70500
 2026-07,timelesz-live-tour-2026-momentum,2026-08-16,17:30,マリンメッセ福岡A館,19,11,4,4,50573.68421052631,0,80000
