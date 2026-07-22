@@ -1,6 +1,6 @@
 ﻿year_month,event_id,perf_date,perf_time,venue,total_tickets,active_tickets,sold_tickets,deleted_tickets,avg_price,min_price,max_price
-2026-07,are-you-red-y,2026-07-25,18:00,東京ドーム,329,61,50,218,16974.772036474165,0,60000
-2026-07,are-you-red-y,2026-07-26,18:00,東京ドーム,494,101,59,334,16839.184210526317,0,80000
+2026-07,are-you-red-y,2026-07-25,18:00,東京ドーム,330,59,52,219,16968.78787878788,0,60000
+2026-07,are-you-red-y,2026-07-26,18:00,東京ドーム,496,103,59,334,16795.477822580644,0,80000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-05,14:00,[岡山県] 岡山芸術創造劇場 ハレノワ 大劇場,1,0,0,1,45000.0,45000,45000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-10,15:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,1,0,0,1,25000.0,25000,25000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-11,13:00,[大阪府] COOL JAPAN PARK OSAKA WWホール,2,0,0,2,16000.0,7000,25000
@@ -20,6 +20,7 @@
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-28,13:45,[東京都] 有楽町よみうりホール,2,0,2,0,0.0,0,0
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-30,17:45,[東京都] 有楽町よみうりホール,1,1,0,0,14500.0,14500,14500
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-07-31,13:45,[東京都] 有楽町よみうりホール,4,0,1,3,23250.0,15000,32000
+2026-07,joseph-amazing-technicolor-dreamcoat,2026-08-02,13:45,[東京都] 有楽町よみうりホール,1,1,0,0,20000.0,20000,20000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-08-03,13:45,[東京都] 有楽町よみうりホール,4,0,0,4,10500.0,10500,10500
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-08-04,13:45,[東京都] 有楽町よみうりホール,1,0,0,1,28000.0,28000,28000
 2026-07,joseph-amazing-technicolor-dreamcoat,2026-08-04,17:45,[東京都] 有楽町よみうりホール,5,1,0,4,17200.0,14000,30000
