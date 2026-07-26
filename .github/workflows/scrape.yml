@@ -6,9 +6,16 @@ on:
 permissions:
   contents: write # 実行後にデータをGitHubに保存（プッシュ）するために必要
 
+# 排他制御: 同じワークフローが同時に2つ以上走ることを防止
+# cancel-in-progress: false → 先行ジョブを尊重し、後発はキューで待機
+concurrency:
+  group: ticket-scraper
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 40  # ランナー割り当て遅延等の異常滞留に対する安全装置
 
     steps:
       - name: リポジトリのチェックアウト
@@ -33,7 +40,11 @@ jobs:
         run: python scraper.py
         
       - name: 取得したデータを保存（コミット＆プッシュ）
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "自動更新: チケットデータのスクレイピング"
-          file_pattern: "data/**" # data/以下の全ファイル（サブフォルダ含む）を対象とする
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "自動更新: チケットデータのスクレイピング"
+          git pull --rebase origin main
+          git push

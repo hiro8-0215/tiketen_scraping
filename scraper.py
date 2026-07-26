@@ -8,6 +8,15 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
+# === タイムリミット設定 ===
+# 25分経過で途中保存して正常終了。次回トリガーで続きを自動再開。
+SCRAPE_START_TIME = time.time()
+MAX_RUNTIME_SECONDS = 25 * 60  # 25分
+
+def is_time_remaining():
+    """残り時間があるかチェック"""
+    return (time.time() - SCRAPE_START_TIME) < MAX_RUNTIME_SECONDS
+
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 SNAPSHOT_DIR = os.path.join(DATA_DIR, 'snapshot')
 MARKET_DIR = os.path.join(DATA_DIR, 'market_snapshot')
@@ -15,7 +24,7 @@ MARKET_DIR = os.path.join(DATA_DIR, 'market_snapshot')
 def fetch_html(url):
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        return urllib.request.urlopen(req).read().decode('utf-8')
+        return urllib.request.urlopen(req, timeout=15).read().decode('utf-8')
     except:
         return ""
 
@@ -52,7 +61,7 @@ def fetch_all_tickets(event_id):
         url = f"https://ticketen.jp/api/tickets/all?context=event&eventId={event_id}&activeOnly=0&limit={limit}&offset={offset}"
         try:
             req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-            res = urllib.request.urlopen(req).read().decode('utf-8')
+            res = urllib.request.urlopen(req, timeout=15).read().decode('utf-8')
             data = json.loads(res)
             batch = data.get('tickets', [])
             tickets.extend(batch)
@@ -260,7 +269,12 @@ def main():
 
     now_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
+    time_limit_reached = False
     for performer in performers:
+        if not is_time_remaining():
+            print(f"[TIME LIMIT] 25分経過のため残りのperformerをスキップします。次回実行で継続します。")
+            time_limit_reached = True
+            break
         print(f"=== Processing {performer} ===")
         master = load_master(performer)
         
@@ -364,7 +378,14 @@ def main():
             with sync_playwright() as p:
                 browser = p.chromium.launch(headless=True)
                 page = browser.new_page()
+                fetched_count = 0
                 for i, share_code in enumerate(new_active_tickets):
+                    if not is_time_remaining():
+                        print(f"[TIME LIMIT] 25分経過のため詳細取得を中断します。残り{len(new_active_tickets) - i}件は次回実行で継続します。")
+                        # 途中まで取得した分を保存してからbreak
+                        save_master(performer, master)
+                        time_limit_reached = True
+                        break
                     print(f"Fetching details for NEW active ticket {share_code}...")
                     details = parse_ticket_details(page, share_code)
                     time.sleep(1)  # サーバー負荷軽減: 全ページアクセス後に1秒待機
@@ -378,13 +399,21 @@ def main():
                     row['order_num'] = details.get('order_num', '')
                     row['ticket_tags'] = details.get('ticket_tags', '')
                     row['details_fetched'] = 'True'
+                    fetched_count += 1
                     
                     # インクリメンタル保存: 50件ごと + 最後の1件はかならず保存
-                    if (i + 1) % 50 == 0 or (i + 1) == len(new_active_tickets):
-                        print(f"[CHECKPOINT] Saving after {i+1} detail fetches...")
+                    if fetched_count % 50 == 0 or (i + 1) == len(new_active_tickets):
+                        print(f"[CHECKPOINT] Saving after {fetched_count} detail fetches...")
                         save_master(performer, master)
                     
                 browser.close()
+        
+        if time_limit_reached:
+            # タイムリミットに達した場合、現在のperformerまでの結果を保存して終了
+            save_master(performer, master)
+            save_snapshots(performer, master)
+            print(f"[TIME LIMIT] {performer} まで保存完了。残りは次回実行で処理します。")
+            break
 
         for t_id, row in master.items():
             if row['status'] == 'listing' and t_id not in current_active_codes:
