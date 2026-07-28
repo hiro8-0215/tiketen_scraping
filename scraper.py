@@ -8,6 +8,30 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
+# --- 互換性安全ラッパー: 既存の open を差し替え（引数を変えずにエンコードエラーを置換） ---
+import builtins
+import sys
+
+_orig_open = builtins.open
+
+def _safe_open(file, mode='r', *args, **kwargs):
+    # テキストモードで開く場合、デフォルトで encoding='utf-8' と errors='replace' を設定
+    if 'b' not in mode:
+        kwargs.setdefault('encoding', 'utf-8')
+        kwargs.setdefault('errors', 'replace')
+    return _orig_open(file, mode, *args, **kwargs)
+
+# グローバルに open を差し替え（このプロセス内の全ての open 呼び出しに適用されます）
+builtins.open = _safe_open
+
+# 標準出力／標準エラーにも errors='replace' を設定（可能なら reconfigure を使用）
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    # reconfigure が使えない環境や古い Python の場合は安全に無視
+    pass
+
 # === タイムリミット設定 ===
 # 25分経過で途中保存して正常終了。次回トリガーで続きを自動再開。
 SCRAPE_START_TIME = time.time()
@@ -40,7 +64,7 @@ def get_events(performer):
 
 def get_event_id_from_slug(slug):
     html = fetch_html(f'https://ticketen.jp/events/{slug}')
-    html = html.replace('\\"', '"')
+    html = html.replace('\"', '"')
     
     match = re.search(rf'"id":"([a-zA-Z0-9]{{20}})","name":"[^"]+","slug":"{slug}"', html)
     if match: return match.group(1)
