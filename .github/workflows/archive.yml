@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v4
+        with:
+          submodules: false
 
       - name: Pythonのセットアップ
         uses: actions/setup-python@v5
